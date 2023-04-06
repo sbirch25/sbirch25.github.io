@@ -1981,7 +1981,7 @@ A cycle is a full backup, and any incremental backups that come after it in a sc
 All backups in a cycle are stored in the same archive repository.</p>
 </div>
 <div class="sect2">
-<h3 id="requesting-a-download"><a class="anchor" href="#requesting-a-download"></a>Requesting a Download</h3>
+<h3 id="request-download"><a class="anchor" href="#request-download"></a>Requesting a Download</h3>
 <div class="paragraph">
 <p>You can request to create a download file for an on-demand backup, or a completed series (a cycle) of scheduled weekly or daily backups.
 On-demand backups are available to download as soon as the backup is complete.
@@ -2001,16 +2001,13 @@ When copied, you must start the download using the URL within 1 hour.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-the-download"><a class="anchor" href="#using-the-download"></a>Using the Download</h3>
+<h3 id="using-download"><a class="anchor" href="#using-download"></a>Using the Download</h3>
 <div class="paragraph">
-<p>You can store the backup download file as appropriate for your backup storage policies, or you can unzip the zip archive file and use the Couchbase Server <a href="#server:backup-restore:cbbackupmgr.adoc" class="xref unresolved">cbbackupmgr</a> utility.
+<p>You can store the backup download file as appropriate for your backup storage policies, or you can unzip the zip archive file and use the Couchbase Server <a href="../reference/command-line-tools.html#cbbackupmgr" class="xref page">cbbackupmgr</a> utility.
 You can use this utility to view, examine, or restore the contents of the backup repository.</p>
 </div>
 <div class="paragraph">
-<p>For more information on the download file, see <a href="#about-zip-archive-file">About the Zip Archive File</a>.</p>
-</div>
-<div class="paragraph">
-<p>For more information about the cbbackupmgr utility, see <a href="#server:backup-restore:cbbackupmgr.adoc" class="xref unresolved">cbbackupmgr</a> in <a href="../reference/command-line-tools.html" class="xref page">Command Line Tools</a>.</p>
+<p>For more information about the cbbackupmgr utility, see <a href="../reference/command-line-tools.html#cbbackupmgr" class="xref page">cbbackupmgr</a> in <a href="../reference/command-line-tools.html" class="xref page">Command Line Tools</a>.</p>
 </div>
 <div class="paragraph">
 <p>As noted in the documentation, if you are running cbbackupmgr commands against Couchbase Capella databases with the database access credentials, there are a few cbbackupmgr disable options that must be used.
@@ -2028,7 +2025,7 @@ Capella stores a downloadable backup file for approximately 24 hours before auto
 </div>
 </div>
 <div class="sect2">
-<h3 id="about-the-zip-archive-file"><a class="anchor" href="#about-the-zip-archive-file"></a>About the Zip Archive File</h3>
+<h3 id="about-zip-archive-file"><a class="anchor" href="#about-zip-archive-file"></a>About the Zip Archive File</h3>
 <div class="paragraph">
 <p>A zip archive file is in the following format:
 {database name}-{bucket-name}-{type of backup}-{date of backup or date range of backup}.zip.</p>
